@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Payment Methods -->
+    <TextView
+        android:id="@+id/txt_payment_ZaloPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="@string/thanh_toan_bang_zalopay"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_payment_MoMo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="@string/thanh_toan_bang_momo"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_payment_Paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="@string/thanh_toan_bang_paypal"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_payment_offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="@string/thanh_toan_khi_nhan_hang"
+        android:textSize="18sp" />
+
+</LinearLayout>

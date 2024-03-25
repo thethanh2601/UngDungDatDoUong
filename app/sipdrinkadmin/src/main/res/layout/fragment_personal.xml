@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PersonalFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ly"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avata"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_above="@id/btnQlyHoaDon"
+                android:layout_toRightOf="@id/img_avata"
+                android:text="Name user"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:id="@+id/tvName"/>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnQlyHoaDon"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/ic_article_24"
+                android:padding="10dp"
+                android:text="  Danh sách hóa đơn"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next2"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnQlyNguoiDung"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnQlyHoaDon">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_manage_accounts_24"
+                android:text="  Danh sách người dùng"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next2"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnTaiKoanVaBaoMat"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnQlyNguoiDung">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/baseline_lock_person_24"
+                android:text="  Tài khoản và bảo mật "/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next2"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnChat"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnTaiKoanVaBaoMat">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_message_24"
+                android:text="  Chat "/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next2"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnLogout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnChat">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_logout_24"
+                android:text="  Đăng xuất "/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next2"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogout"/>
+    </RelativeLayout>
+</ScrollView>
